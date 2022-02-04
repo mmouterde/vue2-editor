@@ -10,6 +10,8 @@
       accept="image/*"
       style="display:none;"
       @change="emitImageInfo($event)"
+      @blur="$emit('blur',quill)"
+      @focus="$emit('focus',quill)"
     />
   </div>
 </template>
